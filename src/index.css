@@ -1,0 +1,32 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+	color-scheme: light dark;
+	--box-background: linear-gradient(
+		120deg,
+		rgb(255 255 255 / 12%),
+		rgb(255 255 255 / 1%)
+	);
+	--box-background-before: linear-gradient(
+		120deg,
+		rgba(255, 255, 255, 0.3),
+		rgba(255, 255, 255, 0.05)
+	);
+	--text-color-heading: #ffffff;
+	--text-color-blue: #5b78f6;
+	--default-padding-inside-box: 30px;
+	--box-border-radius: 30px;
+	--section-spacing-bottom: 20px;
+	--nav-bottom-spacing: 80px;
+	--container-max-width: 1170px;
+	--background-color: #0f0f0f;
+	--default-text-color: #9f9f9f;
+}
+
+body {
+	background: var(--background-color);
+	color: var(--default-text-color);
+	line-height: 19.2px;
+	font-size: 14px;
+	font-weight: 400;
+}
