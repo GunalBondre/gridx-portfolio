@@ -9,6 +9,8 @@ const Card = ({
 	direction,
 	smallcard,
 	children,
+	showIcon,
+	showInfo,
 }) => {
 	return (
 		<div>
@@ -20,16 +22,21 @@ const Card = ({
 				) : (
 					children
 				)}
-				<div className='info'>
-					<div className='title'>
-						<h4>{subtitle}</h4>
-						{smallcard ? <h3>{title}</h3> : <h1>{title}</h1>}
-						<p>{desc}</p>
+				{showInfo && (
+					<div className='info'>
+						<div className='title'>
+							<h4>{subtitle}</h4>
+							{smallcard ? <h3>{title}</h3> : <h1>{title}</h1>}
+							<p>{desc}</p>
+						</div>
+
+						{showIcon && (
+							<div className='icon'>
+								<img src={IconPath} alt='icon' />
+							</div>
+						)}
 					</div>
-					<div className='icon'>
-						<img src={IconPath} alt='icon' />
-					</div>
-				</div>
+				)}
 			</div>
 		</div>
 	);
@@ -43,5 +50,12 @@ Card.propTypes = {
 	direction: PropTypes.string,
 	smallcard: PropTypes.bool,
 	children: PropTypes.node,
+	showIcon: PropTypes.bool,
+	showInfo: PropTypes.bool,
+};
+
+Card.defaultProps = {
+	showIcon: true,
+	showInfo: true,
 };
 export default Card;

@@ -2,9 +2,10 @@ import './home.scss';
 import Card from '../../components/card/Card';
 import CardImg from '../../assets/imageme.jpg';
 import Sign from '../../assets/signature.png';
-import PortfolioBanner from '../../assets/project.jpg';
 import BlogImg from '../../assets/featured.jpg';
-import Icon from '../../assets/icon2.png';
+import ContactCard from '../../components/card/ContactCard';
+import ProfileCard from '../../components/card/ProfileCard';
+import PortfolioCard from '../../components/card/PortfolioCard';
 const Home = () => {
 	return (
 		<section>
@@ -70,22 +71,7 @@ const Home = () => {
 									/>
 								</a>
 
-								<a
-									href='/portfolio'
-									data-aos='zoom-in'
-									data-aos-delay='50'
-									data-aos-duration='1000'
-									data-aos-easing='ease-in-out'
-								>
-									<Card
-										title='Portfolio'
-										subtitle='See in action'
-										desc=''
-										direction='column'
-										image={PortfolioBanner}
-										smallcard
-									/>
-								</a>
+								<PortfolioCard />
 							</div>
 						</div>
 					</div>
@@ -128,24 +114,7 @@ const Home = () => {
 						</div>
 					</Card>
 				</div>
-				<div
-					className='right'
-					data-aos='zoom-in'
-					data-aos-delay='50'
-					data-aos-duration='1000'
-					data-aos-easing='ease-in-out'
-				>
-					<Card title='Stay With Me' subtitle='Digital Address' smallcard>
-						<div className='socialmedia'>
-							<div className='card'>LinkedIn</div>
-							<div className='card'>Facebook</div>
-						</div>
-						<div className='socialmedia'>
-							<div className='card'>Twitter</div>
-							<div className='card'>Instagram</div>
-						</div>
-					</Card>
-				</div>
+				<ProfileCard />
 			</section>
 			<section className='bottom-section container'>
 				<div
@@ -170,25 +139,7 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-				<div
-					className='right'
-					data-aos='zoom-in'
-					data-aos-delay='50'
-					data-aos-duration='1000'
-					data-aos-easing='ease-in-out'
-				>
-					<Card>
-						<div className='wrapper'>
-							<img src={Icon} alt='' className='icon2' />
-							<div className='textbox'>
-								<h3>Lets</h3>
-								<h3>
-									work <span className='blue'>Together</span>
-								</h3>
-							</div>
-						</div>
-					</Card>
-				</div>
+				<ContactCard />
 			</section>
 		</section>
 	);

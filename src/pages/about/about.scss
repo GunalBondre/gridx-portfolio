@@ -1,0 +1,89 @@
+.about-page {
+
+    &__wrapper {
+        width: 100%z;
+    }
+
+    .about-top-section {
+        width: 100%;
+
+        display: flex;
+        gap: 30px;
+
+        .left-section {
+            flex: 1;
+        }
+
+        .right-section {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            flex: 2;
+
+            h1 {
+                font-size: 72px;
+            }
+
+            .card {
+                margin-top: 40px;
+                padding-top: 100px;
+                height: 280px;
+
+                .icon2 {
+                    max-width: 40px;
+                    position: absolute;
+                    top: 0;
+                    left: 30px;
+                }
+
+                .info {
+                    h3 {
+                        font-size: 36px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-info-section {
+        display: flex;
+        gap: 30px;
+        padding-top: 20px;
+
+        .left-section,
+        .right-section {
+            flex: 1;
+
+            .experience,
+            .education {
+                padding: 5px 0;
+            }
+        }
+    }
+
+    .about-bottom-section {
+        margin-top: 20px;
+        display: flex;
+        gap: 30px;
+
+        .portfolio-card,
+        .profile-card {
+            flex: 1;
+
+            .card {
+                padding: 20px;
+            }
+        }
+    }
+
+    .contactCard {
+        flex: 2;
+
+        .card {
+            height: 250px;
+        }
+    }
+
+}
