@@ -9,8 +9,8 @@ import PortfolioCard from '../../components/card/PortfolioCard';
 const Home = () => {
 	return (
 		<section>
-			<section className='section hero-section'>
-				<div className='container'>
+			<section className='section  container'>
+				<div className='hero-section'>
 					<div
 						className='left-section'
 						data-aos='zoom-in'
