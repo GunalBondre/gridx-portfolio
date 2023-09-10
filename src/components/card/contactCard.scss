@@ -10,11 +10,29 @@
         h3 {
             font-size: 48px;
             margin-bottom: 20px;
+
+            @media(max-width:991px) {
+                font-size: 36px;
+
+            }
+
+            @media(max-width:480px) {
+                font-size: 28px;
+            }
         }
 
         span {
             font-size: 48px;
             color: blue;
+
+            @media(max-width:991px) {
+                font-size: 36px;
+
+            }
+
+            @media(max-width:480px) {
+                font-size: 28px;
+            }
         }
 
         .textbox {

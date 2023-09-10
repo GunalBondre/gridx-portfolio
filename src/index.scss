@@ -80,6 +80,10 @@ h3 {
 	font-size: var(--h3-fs);
 	margin-bottom: 12px;
 	color: var(--text-color-heading);
+
+	@media(max-width:480px) {
+		font-size: 16px;
+	}
 }
 
 h4 {
@@ -137,6 +141,10 @@ img {
 
 	&.row {
 		flex-direction: row;
+
+		@media(max-width:480px) {
+			flex-direction: column;
+		}
 	}
 
 	&.column {

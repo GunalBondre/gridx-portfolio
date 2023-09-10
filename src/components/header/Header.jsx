@@ -1,12 +1,21 @@
+import { useState } from 'react';
 import './header.scss';
+import { BiMenu, BiX } from 'react-icons/bi';
 
 const Header = () => {
+	const [open, setOpen] = useState(false);
+
+	const handleClick = () => {
+		setOpen(!open);
+	};
 	return (
-		<nav className='header container'>
+		<nav className={`header container`}>
 			<div className='logo'>
-				<h2>GB</h2>
+				<a href='/'>
+					<h2>GB</h2>
+				</a>
 			</div>
-			<ul className='menu'>
+			<ul className={open ? 'menu-open menu' : 'menu'}>
 				<li className='menu-item'>
 					<a href='/'>
 						<h5>Home</h5>
@@ -30,6 +39,13 @@ const Header = () => {
 			</ul>
 
 			<button className='button'>Lets talk</button>
+			<div className='hamburger'>
+				{open ? (
+					<BiX onClick={handleClick} />
+				) : (
+					<BiMenu onClick={handleClick} />
+				)}
+			</div>
 		</nav>
 	);
 };

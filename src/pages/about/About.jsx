@@ -19,7 +19,12 @@ const About = () => {
 						data-aos-duration='1000'
 						data-aos-easing='ease-in-out'
 					>
-						<Card image={CardImg} showIcon={false} showInfo={false} />
+						<Card
+							className='about-card'
+							image={CardImg}
+							showIcon={false}
+							showInfo={false}
+						/>
 					</div>
 					<div
 						className='right-section'

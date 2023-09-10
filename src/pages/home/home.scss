@@ -170,7 +170,6 @@
     .contactCard {
         .card {
             height: 200px;
-
         }
     }
 
@@ -278,7 +277,8 @@
         width: 120px;
     }
 
-    .card.row {
-        flex-direction: column;
+    .hero-section .right-section .bottom-section .card-section .card {
+        height: 250px;
     }
+
 }
